@@ -102,6 +102,8 @@ def init_chats_room(group_name_list):
             if member_uid_list:
                 group_info['member_uid_list'] = member_uid_list
             group_infos_dict[group_uuid] = group_info
+            print("init_chats_room Method Exec -> Group_Info:", group_info)
+            print("init_chats_room Method Exec -> Group_Infos_Dict", group_infos_dict)
             
             
 def init_data():

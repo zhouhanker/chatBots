@@ -1,5 +1,9 @@
+import asyncio
 import os
 import copy as mycopy
+import random
+
+import aiofiles
 import yaml
 
 
@@ -49,6 +53,8 @@ def copy_config():
 def update_config(new_opts):
     """ 全部替换配置 """
     opts.update(new_opts)
+    
+    
 
 
 if __name__ == '__main__':

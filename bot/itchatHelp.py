@@ -167,9 +167,11 @@ def get_group(group_name, update=False):
     :return: obj 单个群组信息
     """
     if update: itchat.get_chatrooms(update=True)
-    if not group_name: return None
+    if not group_name:
+        return None
     groups = itchat.search_chatrooms(name=group_name)
-    if not groups: return None
+    if not groups:
+        return None
     return groups[0]
 
 
@@ -181,9 +183,11 @@ def get_friend(wechat_name, update=False):
     :return: obj 单个好友信息
     """
     if update: itchat.get_friends(update=True)
-    if not wechat_name: return None
+    if not wechat_name:
+        return None
     friends = itchat.search_friends(name=wechat_name)
-    if not friends: return None
+    if not friends:
+        return None
     return friends[0]
 
 
@@ -195,9 +199,11 @@ def get_mps(mp_name, update=False):
     :return: obj 单个公众号信息
     """
     if update: itchat.get_mps(update=True)
-    if not mp_name: return None
+    if not mp_name:
+        return None
     mps = itchat.search_mps(name=mp_name)
-    if not mps: return None
+    if not mps:
+        return None
     return mps[0]
 
 
